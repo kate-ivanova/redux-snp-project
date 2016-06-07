@@ -1,5 +1,3 @@
-/* eslint no-unused-vars: "off" */
-/* eslint babel/new-cap: "off" */
 import React from 'react';
 import {Link} from 'react-router';
 import CSSModules from 'react-css-modules';

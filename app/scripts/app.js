@@ -1,6 +1,5 @@
 /* eslint no-unused-vars: "off" */
 import cookies from 'cookies';
-import ServerApi from './ServerAPI';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, Redirect, browserHistory} from 'react-router';

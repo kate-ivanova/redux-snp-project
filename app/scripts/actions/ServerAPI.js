@@ -8,11 +8,16 @@ export default class ServerAPI extends ServerClient {
     return false;
   }
 
-  getData() {
+  getCurrentUser() {
     return this.get({
       url: '/api',
       stub: async => {
-        async.resolve('stub data');
+        setTimeout(() => {
+          async.resolve({
+            id: 0,
+            name: 'Ivan Ivanov',
+          });
+        }, 500);
       },
     });
   }

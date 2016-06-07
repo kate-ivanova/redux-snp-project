@@ -1,5 +1,3 @@
-/* eslint no-unused-vars: "off" */
-/* eslint babel/new-cap: "off" */
 import React from 'react';
 import HeaderLayout from 'components/HeaderLayout';
 import ContentLayout from 'components/ContentLayout';
