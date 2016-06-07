@@ -4,9 +4,9 @@ import React from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './FooterLayout.css';
 
-const FooterLayout = () => (
+const FooterLayout = ({className, children}) => (
   <div styleName="footer-layout">
-    FooterLayout
+    redux-snp-app (2016)
   </div>
 );
 

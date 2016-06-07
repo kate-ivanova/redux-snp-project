@@ -1,16 +1,18 @@
 /* eslint no-unused-vars: "off" */
+/* eslint babel/new-cap: "off" */
 import React from 'react';
 import HeaderLayout from 'components/HeaderLayout';
 import ContentLayout from 'components/ContentLayout';
 import FooterLayout from 'components/FooterLayout';
-import './Layout.css';
+import CSSModules from 'react-css-modules';
+import styles from './Layout.css';
 
 const Layout = ({children}) => (
-  <div className="layout">
+  <div styleName="layout">
     <HeaderLayout />
-    <ContentLayout>{children}</ContentLayout>
+    <ContentLayout styleName="layout--content">{children}</ContentLayout>
     <FooterLayout />
   </div>
 );
 
-export default Layout;
+export default CSSModules(Layout, styles);
