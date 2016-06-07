@@ -38,14 +38,6 @@ const doConfig = opts => {
       ],
       loaders: [
         {
-          test: /\.sass$/,
-          loader: ExtractTextPlugin.extract('style', 'css!postcss?pack=sass!sass'),
-        },
-        {
-          test: /\.css$/,
-          loader: ExtractTextPlugin.extract('style', 'css?modules!postcss'),
-        },
-        {
           test: /\.jsx?$/,
           exclude: /(node_modules|bower_components)/,
           loader: 'babel',
@@ -61,6 +53,14 @@ const doConfig = opts => {
         {
           test: /\.jade$/,
           loader: 'jade',
+        },
+        {
+          test: /\.sass$/,
+          loader: ExtractTextPlugin.extract('style', 'css!postcss?pack=sass!sass'),
+        },
+        {
+          test: /\.css$/,
+          loader: ExtractTextPlugin.extract('style', 'css?modules&&localIdentName=[local]___[hash:base64:5]!postcss'),
         },
         {
           test: /\.(png|jpe?g)$/,
