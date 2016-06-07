@@ -5,13 +5,10 @@ import CSSModules from 'react-css-modules';
 import styles from './ContentLayout.css';
 import classNames from 'classnames';
 
-const ContentLayout = ({className, children}) => {
-  const contentClass = classNames(className, 'content-layout');
-  return (
-    <div className={contentClass}>
-      {children}
-    </div>
-  );
-};
+const ContentLayout = ({className, children}) => (
+  <div className={classNames(className, styles['content-layout'])}>
+    {children}
+  </div>
+);
 
 export default CSSModules(ContentLayout, styles);
