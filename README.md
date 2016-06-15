@@ -3,6 +3,7 @@
 ## Особенности
 
 * автоматическая сборка проекта с помощью [npm](https://www.npmjs.com) и [webpack](https://webpack.github.io/)
+* поддерка [Redux](https://github.com/reactjs/redux)
 * поддерка [postcss](https://github.com/postcss/postcss) и cssnext(http://cssnext.io/)
 * поддержка [ES6](http://www.ecma-international.org/ecma-262/6.0/)
 * встроенный proxy-сервер, для доступа к удаленному backend api и также конфиг для использования внешнего [haproxy](http://www.haproxy.org/)
