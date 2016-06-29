@@ -1,6 +1,6 @@
 let settings;
 
-if (BUILD_MODE === 'DEBUG') {
+if (BUILD_MODE === 'debug') {
   settings = {
     mode: 'debug',
     GA: 'UA-XXXXX-X',
@@ -15,7 +15,7 @@ if (BUILD_MODE === 'DEBUG') {
   };
 }
 
-if (BUILD_MODE === 'DIST') {
+if (BUILD_MODE === 'dist') {
   settings = {
     mode: 'testing',
     GA: 'UA-XXXXX-X',
@@ -30,7 +30,7 @@ if (BUILD_MODE === 'DIST') {
   };
 }
 
-if (BUILD_MODE === 'PROD') {
+if (BUILD_MODE === 'prod') {
   settings = {
     mode: 'production',
     GA: 'UA-XXXXX-X',

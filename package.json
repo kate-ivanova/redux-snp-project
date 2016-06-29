@@ -7,9 +7,9 @@
     "lint": "npm run lintxo && npm run lintcoffee",
     "lintcoffee": "coffeelint -f .coffeelintrc app/scripts",
     "lintxo": "xo *.js && xo app/scripts/**/*.js webpack/**/*.js --esnext",
-    "dev": "MODE=DEBUG node ./run-dev.js",
-    "dist": "MODE=DIST node ./run-build.js",
-    "prod": "MODE=PROD node ./run-build.js",
+    "dev": "NODE_ENV=development MODE=debug node ./run-dev.js",
+    "dist": "NODE_ENV=production MODE=dist node ./run-build.js",
+    "prod": "NODE_ENV=production MODE=prod node ./run-build.js",
     "precommit": "npm run test"
   },
   "dependencies": {
@@ -28,6 +28,8 @@
     "react-router": "^2.4.1",
     "react-router-redux": "^4.0.4",
     "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0",
     "reset.css": "^2.0.2",
     "simple-blocks": "lexich/simple-blocks",
     "sp-utils-bootstrapmodal": "lexich/sp-utils-bootstrapmodal",

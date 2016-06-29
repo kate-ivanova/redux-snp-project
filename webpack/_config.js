@@ -99,7 +99,7 @@ const doConfig = opts => {
     },
     postcss: require('./_postcss'),
     plugins: [
-      new (webpack.DefinePlugin)({BUILD_MODE: JSON.stringify(BUILD_MODE)}),
+      new (webpack.DefinePlugin)({'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)}),
       new (webpack.ContextReplacementPlugin)(/node_modules\/moment\//, /ru/),
       new (webpack.ProvidePlugin)({
         $: 'jquery',

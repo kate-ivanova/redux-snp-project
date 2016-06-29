@@ -5,12 +5,12 @@ const path = require('path');
 const makeConfig = require('./_config');
 
 const ALLOWED_MODES = {
-  DEBUG: true,
-  DIST: true,
-  PROD: true,
+  debug: true,
+  dist: true,
+  prod: true,
 };
 
-const BUILD_MODE = process.env.MODE || 'DEBUG';
+const BUILD_MODE = process.env.MODE || 'debug';
 
 if (!ALLOWED_MODES[BUILD_MODE]) {
   console.log(`Build mode has wrong value. MODE=${BUILD_MODE}`);
