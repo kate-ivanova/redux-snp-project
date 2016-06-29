@@ -4,7 +4,7 @@ import styles from './FooterLayout.css';
 import classNames from 'classnames';
 
 const FooterLayout = ({className, children}) => (
-  <div className={classNames(className, styles['footer-layout'])}>
+  <div className={classNames(className, styles.layout)}>
     redux-snp-app (2016)
   </div>
 );

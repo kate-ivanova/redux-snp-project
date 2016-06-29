@@ -5,10 +5,10 @@ import styles from './HeaderLayout.css';
 import classNames from 'classnames';
 
 const HeaderLayout = ({className, children}) => (
-  <div className={classNames(className, styles['header-layout'])}>
+  <div className={classNames(className, styles.layout)}>
     <nav>
-      <Link styleName="header-layout--link" activeClassName={styles.__active} to="/">Home</Link>
-      <Link styleName="header-layout--link" activeClassName={styles.__active} to="contacts">Contacts</Link>
+      <Link className={styles.link} activeClassName={styles.__active} to="/">Home</Link>
+      <Link className={styles.link} activeClassName={styles.__active} to="contacts">Contacts</Link>
     </nav>
   </div>
 );

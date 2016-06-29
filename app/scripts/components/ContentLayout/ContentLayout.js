@@ -4,7 +4,7 @@ import styles from './ContentLayout.css';
 import classNames from 'classnames';
 
 const ContentLayout = ({className, children}) => (
-  <div className={classNames(className, styles['content-layout'])}>
+  <div className={classNames(className, styles.content)}>
     {children}
   </div>
 );

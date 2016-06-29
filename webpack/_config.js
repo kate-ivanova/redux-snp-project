@@ -60,7 +60,7 @@ const doConfig = opts => {
         },
         {
           test: /\.css$/,
-          loader: ExtractTextPlugin.extract('style', 'css?modules&&localIdentName=[local]___[hash:base64:5]!postcss'),
+          loader: ExtractTextPlugin.extract('style', 'css?modules&&localIdentName=[local]__[hash:base64:5]!postcss'),
         },
         {
           test: /\.(png|jpe?g)$/,

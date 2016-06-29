@@ -2,11 +2,12 @@
 import cookies from 'cookies';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, Redirect, browserHistory} from 'react-router';
+import {Router, browserHistory} from 'react-router';
 import {Provider} from 'react-redux';
 import {syncHistoryWithStore} from 'react-router-redux';
 import configureStore from './configureStore';
 import routes from './routes';
+import {requestUser} from 'actions';
 
 $(document).ajaxSend((event, jqxhr, settings) => {
   if (settings.type !== 'GET') {
@@ -18,6 +19,7 @@ export default class Application {
 
   constructor() {
     this.store = configureStore();
+    this.store.dispatch(requestUser());
     this.history = syncHistoryWithStore(browserHistory, this.store);
     this.$document = $(document);
   }
